@@ -1,0 +1,528 @@
+import React, {Component, useState, useEffect } from "react";
+//import {Image} from 'semantic-ui-react';
+import mainLogo from  '../../assets/images/Logo-NGE.png'
+import logo1 from  '../../assets/images/banner-logos/1.svg'
+import logo2 from  '../../assets/images/banner-logos/2.svg'
+import logo3 from  '../../assets/images/banner-logos/3.svg'
+import logo4 from  '../../assets/images/banner-logos/4.svg'
+import ucImg1 from  '../../assets/images/use-case-images/nge-uc-1.png'
+import ucImg2 from  '../../assets/images/use-case-images/nge-uc-2.png'
+import clientimage from  '../../assets/images/clientimage.png'
+import $ from 'jquery';
+import linkedin from  '../../assets/images/Social/linkedin.svg'
+import fb from  '../../assets/images/Social/fb.svg'
+import insta from  '../../assets/images/Social/insta.svg'
+
+
+
+class Home extends React.Component {
+    constructor() {
+      super();
+      this.state = {color: "red"};
+    }
+    render() {
+      return(
+        <div className="App">
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container mt-3">
+    <a class="navbar-brand text-white" href="#"><img src={mainLogo} className=""/></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">HOW IT WORKS
+                <span class="sr-only">(current)</span>
+              </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">USE CASES</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">TESTIMONIALS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">FAQ</a>
+        </li>
+      </ul>
+    </div>
+    <button class="gold-btn-gradient button border-0 ">I'M INTERESTED</button>
+  </div>
+</nav>
+
+
+<header class="masthead">
+  <div class="container h-100">
+    <div class="row h-100 align-items-center">
+      <div class="col-12 text-center mt-5 pt-5">
+        <h1 class="font-weight-light text-white"><span>B</span>ecome a referrer and warm up to</h1>
+        <h1 class="text-primary">USD 5,000</h1>
+        <p class="lead text-white">Subtitle will stay here, Subtitle will stay here</p>
+        <div class="text-center"><button class="gold-btn-gradient border-0 button">REFER NOW</button></div>
+      </div>
+      <div class="col-9 mx-auto">
+        <div className="row align-items-end jutify-content-center w-100">
+          <div className="col-md-3">
+          <img src={logo1} className=""/>
+          </div>
+          <div className="col-md-3">
+          <img src={logo4} className=""/>
+          </div>
+          <div className="col-md-3">
+          <img src={logo2} className=""/>
+          </div>
+
+          <div className="col-md-3">
+          <img src={logo3} className=""/>
+          </div>
+
+        </div>
+      </div>
+    </div>    
+  </div>
+ 
+</header>
+    
+    <section className="page-section">
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-12 text-center">
+            <h1 className="section-heading text-lowercase text-primary font-weight-bold"><span class="text-uppercase">H</span>ow much you can earn ?</h1>
+          </div>
+        </div>
+        <div className="row text-center py-5">
+          <div className="col-md-6">
+            <h4 className="referral-count">2</h4>
+            <p className="text-dark font-weight-bold">Referals</p>
+            <div class="slidecontainer">
+              <input type="range" min="1" max="100" value="50" />
+            </div>
+          </div>
+          <div className="col-md-6">
+            <div class="light-bg py-3 rounded-forced">
+              <p class="text-muted mt-3">You will earn</p>
+              <h2 className="service-heading text-primary font-weight-bold">USD 5,000</h2>
+              <p className="text-muted w-75 mx-auto px-5 pt-3">Introduce a friend to NGE we will set them up and give you to USD 5,000 in return!</p>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  
+    
+
+  
+    
+    <section className="light-grey-bg page-section pb-0">
+      <div className="container position-relative">
+        <div className="row">
+          <div className="col-lg-12 text-center">
+            <h1 className="section-heading text-lowercase text-primary font-weight-bold"><span class="text-uppercase">H</span>ow it works ?</h1>
+            <p className="section-subheading text-muted w-75 mx-auto px-5 pt-3 ">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.</p>
+          </div>
+        </div>
+        <div className="position-relative position-top-100">
+          <div className="row">
+            <div  className="col-sm-3">
+              <div class="card shadow-lg">
+                <div class="card-body rounded-forced">
+                  <h5 class="card-title text-left text-primary card-count">1</h5>
+                  <p className="section-subheading text-muted text-left font-size-sm">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.At vero eos et accusamus </p>
+                </div>
+              </div>
+            </div>
+            <div  className="col-sm-3">
+              <div class="card shadow-lg">
+                <div class="card-body rounded-forced">
+                  <h5 class="card-title text-left text-primary card-count">2</h5>
+                  <p className="section-subheading text-muted text-left font-size-sm">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.At vero eos et accusamus </p>
+                </div>
+              </div>
+            </div>
+
+            <div  className="col-sm-3">
+              <div class="card shadow-lg">
+                <div class="card-body rounded-forced">
+                  <h5 class="card-title text-left text-primary card-count">3</h5>
+                  <p className="section-subheading text-muted text-left font-size-sm">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.At vero eos et accusamus </p>
+                </div>
+              </div>
+            </div>
+
+            <div  className="col-sm-3">
+              <div class="card shadow-lg">
+                <div class="card-body rounded-forced">
+                  <h5 class="card-title text-left text-primary card-count">4</h5>
+                  <p className="section-subheading text-muted text-left font-size-sm">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.At vero eos et accusamus </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 position-relative position-top-50">
+              <div class="text-center"><button class="gold-btn-gradient border-0 button">REFER NOW</button></div>
+          </div>
+
+          </div>
+          
+        </div>
+        
+      </div>
+    </section>
+    <section className="page-section" ></section>
+    <section className="page-section" ></section>
+  
+    
+    <section className="page-section dark-bg mt-5" id="usecase">
+      <div className="container">
+          <div className="row">
+            <div className="col-lg-12 text-center">
+              <h1 className="section-heading text-lowercase text-white font-weight-bold text-capitalize ">Use Case</h1>
+              
+            </div>
+          </div>
+        <div className="row">
+          <div className="col-12 col-sm-4 col-md-4">
+            <div class="card rounded-forced">
+              <img src={ucImg1} className="rounded-forced border-bottom-radius-0"/>
+              <div class="card-body text-left">
+                <h5 class="card-title font-weight-bold">Start or relocate your in UAE</h5>
+                <p class="card-text text-muted font-size-sm text-start">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary bg-transparent border-0 text-primary text-uppercase font-size-sm">See more ></a>
+              </div>
+            </div>
+          </div>
+
+          <div className="col-12 col-sm-4 col-md-4">
+            <div class="card rounded-forced">
+              <img src={ucImg2} className="rounded-forced border-bottom-radius-0"/>
+              <div class="card-body text-left">
+                <h5 class="card-title font-weight-bold">Start or relocate your in UAE</h5>
+                <p class="card-text text-muted font-size-sm text-start">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary bg-transparent border-0 text-primary text-uppercase font-size-sm">See more ></a>
+              </div>
+            </div>
+          </div>
+
+          <div className="col-12 col-sm-4 col-md-4">
+            <div class="card rounded-forced">
+              <img src={ucImg1} className="rounded-forced border-bottom-radius-0"/>
+              <div class="card-body text-left">
+                <h5 class="card-title font-weight-bold">Start or relocate your in UAE</h5>
+                <p class="card-text text-muted font-size-sm text-start">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary bg-transparent border-0 text-primary text-uppercase font-size-sm">See more ></a>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <div className="row">
+          <div className="col-12 text-center py-5">
+              <button class="text-dark bg-white rounded-forced p-2 border-0 text-uppercase font-weight-bold font-size-sm px-3"> View all use cases</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section className="page-section" id="testimonials">
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-12 text-center">
+            <h1 className="section-heading text-lowercase text-primary font-weight-bold"><span class="text-uppercase">J</span>oin our satisfied clients</h1>
+          </div>
+        </div>
+        <div className="row text-center py-5">
+          <div className="col-md-3">
+            <div class="card rounded-forced primary-bg text-white client">
+              
+              <div class="card-body text-left">
+                <div class="row align-items-center justify-content-start">
+                  <div class="circle-img">
+                  <img src={clientimage} className=""/>
+                  </div>
+                  <div class="client-detail pl-3 pt-1">
+                    <div class="clientName font-weight-bold">John Smith <span class="clientAge">39</span></div>
+                    <div class="clientOccup font-size-sm text-white">Enterpreneur</div>
+                  </div>
+                </div>
+                <p class="card-text font-size-sm text-start text-white mt-3 mb-0">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary bg-transparent border-0 text-white text-uppercase font-size-sm text-right float-right">></a>
+              </div>
+            </div>  
+          </div>
+
+          <div className="col-md-3">
+            <div class="card rounded-forced primary-bg text-white client">
+              
+              <div class="card-body text-left">
+                <div class="row align-items-center justify-content-start">
+                  <div class="circle-img">
+                  <img src={clientimage} className=""/>
+                  </div>
+                  <div class="client-detail pl-3 pt-1">
+                    <div class="clientName font-weight-bold">John Smith <span class="clientAge">39</span></div>
+                    <div class="clientOccup font-size-sm text-white">Enterpreneur</div>
+                  </div>
+                </div>
+                <p class="card-text font-size-sm text-start text-white mt-3 mb-0">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary bg-transparent border-0 text-white text-uppercase font-size-sm text-right float-right">></a>
+              </div>
+            </div>  
+          </div>
+
+          <div className="col-md-3">
+            <div class="card rounded-forced primary-bg text-white client">
+              
+              <div class="card-body text-left">
+                <div class="row align-items-center justify-content-start">
+                  <div class="circle-img">
+                  <img src={clientimage} className=""/>
+                  </div>
+                  <div class="client-detail pl-3 pt-1">
+                    <div class="clientName font-weight-bold">John Smith <span class="clientAge">39</span></div>
+                    <div class="clientOccup font-size-sm text-white">Enterpreneur</div>
+                  </div>
+                </div>
+                <p class="card-text font-size-sm text-start text-white mt-3 mb-0">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary bg-transparent border-0 text-white text-uppercase font-size-sm text-right float-right">></a>
+              </div>
+            </div>  
+          </div>
+
+          <div className="col-md-3">
+            <div class="card rounded-forced primary-bg text-white client">
+              
+              <div class="card-body text-left">
+                <div class="row align-items-center justify-content-start">
+                  <div class="circle-img">
+                  <img src={clientimage} className=""/>
+                  </div>
+                  <div class="client-detail pl-3 pt-1">
+                    <div class="clientName font-weight-bold">John Smith <span class="clientAge">39</span></div>
+                    <div class="clientOccup font-size-sm text-white">Enterpreneur</div>
+                  </div>
+                </div>
+                <p class="card-text font-size-sm text-start text-white mt-3 mb-0">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary bg-transparent border-0 text-white text-uppercase font-size-sm text-right float-right">></a>
+              </div>
+            </div>  
+          </div>
+        </div>
+      </div>
+    </section>
+  
+
+    <section className="page-section light-grey-bg" id="becomeareferer">
+      <div className="container">
+        
+        <div className="row text-center align-items-center py-5">
+          <div className="col-md-6">
+            <h1 className="section-heading text-lowercase text-dark font-weight-bold text-left"><span class="text-uppercase">B</span>ecome a referer and earn upto <span class="uppercase">USD</span> 5,000</h1> 
+          </div>
+          <div className="col-md-6">
+          <div class="text-center"><button class="gold-btn-gradient border-0 button ">START EARNING NOW</button></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section className="page-section" id="faqs">
+      <div className="container">
+      <div class="row"><div class="col-lg-12 text-center"><h1 class="section-heading text-lowercase text-primary font-weight-bold"><span class="text-uppercase">FAQ</span></h1></div></div>
+        <div className="row text-center py-5">
+          
+          <div className="col-md-12">
+            <div id="accordion" class="myaccordion">
+                  <div class="card">
+                    <div class="card-header" id="headingOne">
+                      <h2 class="mb-0">
+                        <button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                          Undergraduate Studies
+                          <span class="fa-stack fa-sm">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fas fa-plus fa-stack-1x fa-inverse"></i>
+                          </span>
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                      <div class="card-body">
+                        <ul>
+                          <li>Computer Science</li>
+                          <li>Economics</li>
+                          <li>Sociology</li>
+                          <li>Nursing</li>
+                          <li>English</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingTwo">
+                      <h2 class="mb-0">
+                        <button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Postgraduate Studies
+                          <span class="fa-stack fa-2x">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fas fa-plus fa-stack-1x fa-inverse"></i>
+                          </span>
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                      <div class="card-body">
+                        <ul>
+                          <li>Informatics</li>
+                          <li>Mathematics</li>
+                          <li>Greek</li>
+                          <li>Biostatistics</li>
+                          <li>English</li>
+                          <li>Nursing</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingThree">
+                      <h2 class="mb-0">
+                        <button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          Research
+                          <span class="fa-stack fa-2x">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fas fa-plus fa-stack-1x fa-inverse"></i>
+                          </span>
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                      <div class="card-body">
+                        <ul>
+                          <li>Astrophysics</li>
+                          <li>Informatics</li>
+                          <li>Criminology</li>
+                          <li>Economics</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+            </div>      
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    
+
+    <section className="page-section dark-bg mt-5 pb-2" id="footer">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-2">
+                  <div class="footer-logo">
+                    <a class="navbar-brand text-white" href="#"><img src={mainLogo} className=""/></a>
+                  </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-md-4 text-left pl-3">
+                          <p class="text-primary">
+                            HOW IT WORKS
+                          </p>
+                          <p class="text-white">
+                            ITEM 1
+                          </p>
+                          <p class="text-white">
+                            ITEM 2
+                          </p>
+                          <p class="text-white">
+                            ITEM 3
+                          </p>
+                          <p class="text-white">
+                            ITEM 4
+                          </p>
+                        </div>
+                        <div class="col-md-4 text-left">
+                          <p class="text-primary">
+                            USE CASE
+                          </p>
+                          <p class="text-white">
+                            ITEM 1
+                          </p>
+                          <p class="text-white">
+                            ITEM 2
+                          </p>
+                          <p class="text-white">
+                            ITEM 3
+                          </p>
+                          <p class="text-white">
+                            ITEM 4
+                          </p>
+                        </div>
+                        <div class="col-md-4 text-left">
+                          <p class="text-primary">
+                            TESTIMONIALS
+                          </p>
+                          <p class="text-white">
+                            ITEM 1
+                          </p>
+                          <p class="text-white">
+                            ITEM 2
+                          </p>
+                          <p class="text-white">
+                            ITEM 3
+                          </p>
+                          <p class="text-white">
+                            ITEM 4
+                          </p>
+                        </div>      
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                          <div class="copyright mt-5 py-3">
+                              <p class="font-size-sm text-white mb-0">@ copyright 2020 - Next GenerationEquity</p>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="textcenter">
+                    <p class="text-primary">
+                      SOCIAL MEDIA
+                    </p>
+                    <div class="social">
+                        <ul>
+                          <li>
+                          <a class="text-white" href="#"><img src={linkedin} className=""/></a>
+                          </li>  
+                          <li>
+                          <a class="text-white" href="#"><img src={fb} className=""/></a>
+                          </li>  
+                          <li>
+                          <a class="text-white" href="#"><img src={insta} className=""/></a>
+                          </li>  
+                        </ul>  
+                    <div>
+                    </div>  
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+    </section>
+
+   
+
+      </div>
+      )
+    }
+  }
+  
+  export default Home
+  $("#accordion").on("hide.bs.collapse show.bs.collapse", e => {
+    $(e.target)
+      .prev()
+      .find("i:last-child")
+      .toggleClass("fa-minus fa-plus");
+  });
+  
